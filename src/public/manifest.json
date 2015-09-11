@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "My npm downloads",
-  "description": "Quickly view your npm packages' download stats.",
+  "description": "Quickly view your npm packages' download stats in Google Chrome.",
   "version": "1.0",
 
   "icons": {

@@ -1,13 +1,26 @@
 {
   "name": "my-npm-downloads",
   "version": "1.0.0",
-  "description": "Quickly view your npm packages' download stats.",
+  "description": "Quickly view your npm packages' download stats in Google Chrome.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdevel/my-npm-downloads.git"
+  },
   "author": {
     "email": "js.developer.undefined@gmail.com",
     "name": "http://blog.jsdevel.me"
   },
-  "private": true,
+
+  "keywords": [
+    "chrome",
+    "extension",
+    "npm",
+    "download",
+    "stats"
+  ],
+
   "license": "ISC",
+
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "^3.9.0",

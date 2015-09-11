@@ -7,8 +7,11 @@ APP.directive('user', () => {
   return {
     template: `
       <div>
-        <input ng-model="vm.username"/>
-        <button ng-click="vm.updateStorage()">Update</button>
+        <label>npm username</label>
+        <div class="row">
+          <input ng-model="vm.username"/>
+          <button ng-click="vm.updateStorage()">Update</button>
+        </div>
       </div>
       `,
 
@@ -29,11 +32,11 @@ APP.directive('packages', ($http) => {
   return {
     template: `
       <div>
-        <ul ng-if="vm.username">
+        <ol ng-if="vm.username">
           <li ng-repeat="package in vm.packages | orderBy:'monthlyDownloads':true">
             {{package.title}} - {{package.monthlyDownloads}}
           </li>
-        </ul>
+        </ol>
         <div ng-if="!vm.username">
         Please enter a username.
         </div>
