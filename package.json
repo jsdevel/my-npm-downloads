@@ -1,0 +1,17 @@
+{
+  "name": "my-npm-downloads",
+  "version": "1.0.0",
+  "description": "Quickly view your npm packages' download stats.",
+  "author": {
+    "email": "js.developer.undefined@gmail.com",
+    "name": "http://blog.jsdevel.me"
+  },
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "run-sequence": "^1.1.2"
+  }
+}
