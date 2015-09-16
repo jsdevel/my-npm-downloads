@@ -1,6 +1,6 @@
 {
   "name": "my-npm-downloads",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Quickly view your npm packages' download stats in Google Chrome.",
   "repository": {
     "type": "git",
@@ -10,7 +10,6 @@
     "email": "js.developer.undefined@gmail.com",
     "name": "http://blog.jsdevel.me"
   },
-
   "keywords": [
     "chrome",
     "extension",
@@ -18,13 +17,15 @@
     "download",
     "stats"
   ],
-
   "license": "ISC",
-
   "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
     "del": "^2.0.2",
+    "event-stream": "^3.3.1",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "run-sequence": "^1.1.2"
+    "gulp-util": "^3.0.6",
+    "run-sequence": "^1.1.2",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
