@@ -15,6 +15,10 @@ APP.factory('packageService', function($http, $q) {
           return packages;
         });
       });
+    },
+
+    openInChromeTab: function openInChromeTab(packageName) {
+      chrome.tabs.create({url: `${NPM}/package/${packageName}`});
     }
   };
 

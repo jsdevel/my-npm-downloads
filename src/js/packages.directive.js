@@ -6,7 +6,7 @@ APP.directive('packages', function($http, packageService, storageService) {
       <div>
         <ol ng-if="vm.packages">
           <li ng-repeat="package in vm.packages | orderBy:'downloads':true">
-            {{package.name}} - {{package.downloads}}
+            <a href="" ng-click="vm.openTab(package.name)">{{package.name}}</a> - {{package.downloads}}
           </li>
         </ol>
         <div ng-if="!vm.packages">
@@ -22,6 +22,8 @@ APP.directive('packages', function($http, packageService, storageService) {
     },
     controller($scope, $http) {
       var vm = this;
+
+      vm.openTab = packageService.openInChromeTab;
 
       $scope.$watch(() => this.username, (username) => {
         if (username) {
